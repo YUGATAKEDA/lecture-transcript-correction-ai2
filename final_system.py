@@ -30,7 +30,7 @@ class LightweightCorrector:
             r'\bエルエム\b': 'LLM',
             r'\b松尾研\b(?!究室)': '松尾研究室',
             r'とも配も': 'ともかく',
-            r'編集BERT': 'BERT',
+            r'編集BERT': '演習パート',
             r'あの後単語': '後ほど',
         }
         

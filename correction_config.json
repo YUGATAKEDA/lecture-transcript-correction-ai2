@@ -1,0 +1,47 @@
+{
+  "system": {
+    "name": "講義書き起こし修正AI",
+    "version": "1.0",
+    "enable_llm": true,
+    "aws_region": "us-east-1",
+    "model_id": "amazon.nova-micro-v1:0"
+  },
+  "correction_settings": {
+    "enable_tech_terms": true,
+    "enable_ending_fixes": true,
+    "enable_filler_removal": true,
+    "enable_naturalization": true,
+    "enable_punctuation": true,
+    "enable_repetition_removal": true
+  },
+  "llm_settings": {
+    "temperature": 0.1,
+    "top_p": 0.9,
+    "max_tokens": 1000,
+    "use_threshold": 0.5
+  },
+  "cost_settings": {
+    "max_cost_per_session": 100.0,
+    "alert_threshold": 50.0,
+    "cost_tracking": true
+  },
+  "output_settings": {
+    "save_original": true,
+    "save_corrections_log": true,
+    "save_statistics": true,
+    "output_format": "txt"
+  },
+  "custom_patterns": {
+    "tech_terms": {
+      "ベルトン": "ベルトン",
+      "松尾研": "松尾研究室",
+      "岩澤研": "岩澤研究室"
+    },
+    "organization_names": {
+      "松尾岩澤研": "松尾・岩澤研"
+    },
+    "product_names": {
+      "Googleコラボ": "Google Colab"
+    }
+  }
+}

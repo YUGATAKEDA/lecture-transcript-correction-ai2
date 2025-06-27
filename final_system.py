@@ -23,8 +23,8 @@ class LightweightCorrector:
     def load_patterns(self):
         """修正パターン読み込み"""
         self.tech_terms = {
-            r'\bベルト\b': 'BERT',
-            r'\bベル ト\b': 'BERT',
+            r'\bベルト\b': 'ベルトン',
+            r'\bベル ト\b': 'ベルトン',
             r'\bジーピーティー\b': 'GPT',
             r'\bラーム\b': 'Llama',
             r'\bエルエム\b': 'LLM',
